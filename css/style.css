@@ -727,6 +727,14 @@ a:hover { color: var(--navy); }
 .bio-body p { margin-bottom: 1.4em; }
 .bio-body p:last-child { margin-bottom: 0; }
 
+.about-portrait {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
 .credentials-panel {
   background: var(--navy);
   padding: 32px;
