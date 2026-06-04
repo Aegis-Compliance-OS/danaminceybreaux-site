@@ -1,27 +1,41 @@
 /* ============================================
    DANA MINCEY-BREAUX — Personal Site
-   Palette: Cream / Navy / Electric Blue
+   Palette: Sage Mist / Garnet / Gold / Walnut
+   Inspired by editorial moodboard
    Typography: Cormorant Garamond + DM Mono
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Mono:wght@300;400;500&family=Chakra+Petch:wght@400;500;600&display=swap');
 
 :root {
-  --cream:       #F5F0E8;
-  --cream-dark:  #EDE7D9;
-  --cream-deep:  #E4DDD0;
-  --navy:        #0E1F4A;
-  --navy-mid:    #1C3060;
-  --navy-light:  #2B4A8A;
-  --blue:        #1A6FE0;
-  --blue-light:  #4A9EF5;
-  --blue-glow:   rgba(26,111,224,0.12);
-  --silver:      #8A9BB0;
-  --text-body:   #1A2340;
-  --text-mid:    #3D5070;
-  --text-light:  #6A7D96;
-  --rule:        rgba(14,31,74,0.15);
-  --rule-strong: rgba(14,31,74,0.3);
+  /* Surfaces — warm stone pulled from photo background */
+  --cream:       #EDE8E0;
+  --cream-dark:  #E4DDD4;
+  --cream-deep:  #D9D0C5;
+
+  /* Garnet — deep burgundy from red spheres & tray */
+  --navy:        #6B1E2A;
+  --navy-mid:    #8A2535;
+  --navy-light:  #A83040;
+
+  /* Gold — hammered dome accent */
+  --blue:        #9A7230;
+  --blue-light:  #C49A50;
+  --blue-glow:   rgba(154,114,48,0.12);
+
+  /* Sage mist — blue-grey plate and glass */
+  --silver:      #8FA8A8;
+  --sage:        #7A9E9E;
+  --sage-glow:   rgba(122,158,158,0.15);
+
+  /* Text — walnut brown from wood panel */
+  --text-body:   #2C1F18;
+  --text-mid:    #4A3428;
+  --text-light:  #7A6858;
+
+  /* Rules */
+  --rule:        rgba(44,31,24,0.12);
+  --rule-strong: rgba(44,31,24,0.25);
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-mono:    'DM Mono', monospace;
@@ -80,7 +94,7 @@ a:hover { color: var(--navy); }
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(245,240,232,0.92);
+  background: rgba(237,232,224,0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--rule);
@@ -326,7 +340,7 @@ a:hover { color: var(--navy); }
 .btn-outline:hover {
   border-color: var(--navy);
   color: var(--navy);
-  background: rgba(14,31,74,0.04);
+  background: rgba(44,31,24,0.04);
 }
 
 /* Hero grid lines decoration */
@@ -457,7 +471,7 @@ a:hover { color: var(--navy); }
 
 /* ── ENGAGEMENTS STRIP ── */
 .engagements-strip {
-  background: var(--navy);
+  background: #2C1F18;
   padding: clamp(48px, 7vh, 80px) var(--pad);
   position: relative;
   overflow: hidden;
@@ -469,8 +483,8 @@ a:hover { color: var(--navy); }
   inset: 0;
   background: repeating-linear-gradient(
     90deg,
-    rgba(255,255,255,0.02) 0px,
-    rgba(255,255,255,0.02) 1px,
+    rgba(154,114,48,0.06) 0px,
+    rgba(154,114,48,0.06) 1px,
     transparent 1px,
     transparent 80px
   );
@@ -487,7 +501,7 @@ a:hover { color: var(--navy); }
   font-size: 0.6rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: var(--blue-light);
+  color: #C49A50;
   margin-bottom: 36px;
 }
 
@@ -498,7 +512,7 @@ a:hover { color: var(--navy); }
 }
 
 .engagement-item {
-  border-left: 1px solid rgba(255,255,255,0.15);
+  border-left: 1px solid rgba(196,154,80,0.3);
   padding-left: 20px;
 }
 
@@ -506,7 +520,7 @@ a:hover { color: var(--navy); }
   font-family: var(--font-mono);
   font-size: 0.6rem;
   letter-spacing: 0.2em;
-  color: var(--blue-light);
+  color: #8FA8A8;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -515,7 +529,7 @@ a:hover { color: var(--navy); }
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 400;
-  color: #F5F0E8;
+  color: #EDE8E0;
   line-height: 1.4;
   margin-bottom: 6px;
 }
@@ -523,7 +537,7 @@ a:hover { color: var(--navy); }
 .engagement-org {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  color: rgba(245,240,232,0.5);
+  color: rgba(237,232,224,0.45);
   letter-spacing: 0.1em;
 }
 
@@ -569,8 +583,8 @@ a:hover { color: var(--navy); }
 
 /* ── FOOTER ── */
 .footer {
-  background: var(--navy);
-  color: rgba(245,240,232,0.6);
+  background: #2C1F18;
+  color: rgba(237,232,224,0.6);
   padding: clamp(48px, 7vh, 80px) var(--pad) 32px;
 }
 
@@ -595,7 +609,7 @@ a:hover { color: var(--navy); }
   font-size: 0.9rem;
   line-height: 1.7;
   max-width: 38ch;
-  color: rgba(245,240,232,0.55);
+  color: rgba(237,232,224,0.55);
   margin-bottom: 20px;
 }
 
@@ -603,7 +617,7 @@ a:hover { color: var(--navy); }
   font-family: var(--font-mono);
   font-size: 0.65rem;
   letter-spacing: 0.1em;
-  color: rgba(245,240,232,0.5);
+  color: rgba(237,232,224,0.5);
   margin-bottom: 6px;
 }
 
@@ -614,7 +628,7 @@ a:hover { color: var(--navy); }
   font-size: 0.55rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: rgba(245,240,232,0.3);
+  color: rgba(237,232,224,0.3);
   margin-bottom: 20px;
 }
 
@@ -628,7 +642,7 @@ a:hover { color: var(--navy); }
 .footer-links a {
   font-family: var(--font-display);
   font-size: 0.95rem;
-  color: rgba(245,240,232,0.6);
+  color: rgba(237,232,224,0.6);
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -639,7 +653,7 @@ a:hover { color: var(--navy); }
   max-width: var(--max-w);
   margin: 0 auto;
   padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(237,232,224,0.08);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -651,7 +665,7 @@ a:hover { color: var(--navy); }
   font-family: var(--font-mono);
   font-size: 0.6rem;
   letter-spacing: 0.12em;
-  color: rgba(245,240,232,0.3);
+  color: rgba(237,232,224,0.3);
 }
 
 .footer-sdvosb {
@@ -659,7 +673,7 @@ a:hover { color: var(--navy); }
   font-size: 0.55rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(245,240,232,0.3);
+  color: rgba(237,232,224,0.3);
 }
 
 @media (max-width: 768px) {
@@ -736,7 +750,7 @@ a:hover { color: var(--navy); }
 }
 
 .credentials-panel {
-  background: var(--navy);
+  background: #2C1F18;
   padding: 32px;
   border-radius: 2px;
 }
@@ -746,10 +760,10 @@ a:hover { color: var(--navy); }
   font-size: 0.55rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: rgba(245,240,232,0.4);
+  color: rgba(237,232,224,0.35);
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(237,232,224,0.08);
 }
 
 .cred-row {
@@ -757,7 +771,7 @@ a:hover { color: var(--navy); }
   align-items: flex-start;
   gap: 10px;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(237,232,224,0.06);
 }
 
 .cred-row:last-child { border-bottom: none; }
@@ -766,7 +780,7 @@ a:hover { color: var(--navy); }
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--blue-light);
+  background: #8FA8A8;
   margin-top: 6px;
   flex-shrink: 0;
 }
@@ -774,7 +788,7 @@ a:hover { color: var(--navy); }
 .cred-text {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  color: rgba(245,240,232,0.7);
+  color: rgba(237,232,224,0.7);
   letter-spacing: 0.05em;
   line-height: 1.5;
 }
@@ -845,9 +859,9 @@ a:hover { color: var(--navy); }
   border-radius: 2px;
 }
 
-.et-badge.upcoming { background: rgba(26,111,224,0.1); color: var(--blue); }
-.et-badge.completed { background: rgba(14,31,74,0.07); color: var(--text-light); }
-.et-badge.speaker { background: rgba(14,31,74,0.12); color: var(--navy); }
+.et-badge.upcoming { background: rgba(154,114,48,0.10); color: var(--blue); }
+.et-badge.completed { background: rgba(44,31,24,0.06); color: var(--text-light); }
+.et-badge.speaker { background: rgba(44,31,24,0.10); color: var(--navy); }
 
 /* ── ENTITY DETAIL PAGE ── */
 .entity-detail-header {
